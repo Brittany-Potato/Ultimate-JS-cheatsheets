@@ -56,9 +56,10 @@ person.sayHello();
 // searchValue - The text or pattern you want to replace
 // replacement - The text to insert instead
 
-// .on() Particularly when using 'discord.j' and 'tmi.js' libraries the .on method listens for specific events and defines what your 
+// .on() Particularly when using 'discord.j' and 'tmi.js' libraries the .on method listens for specific events and defines what your
 // program should do when those events occur.
 // .on syntax = object.on('eventName', callbackFunction);
+
 //! Custom methods
 
 const car = {
@@ -108,10 +109,47 @@ dog.speak();
 // Computed Properties can create property names dynamically using square brackets [] - let key = 'color'; const obj = { [key]: "blue" }; console.log(obj.color); = blue
 // Nested properties are objects containing another object - const student = { name: "Fredrick", address: { city: "long", zip: "E1 6AN"} };
 
-// Accessing properties 
-// Dot notation - most common = person.name
+// Accessing properties
+// Dot notation - most common = person.name OR Bracket notation = person["name"]
 
-//! Classes
+// Property methods
+// Object.keys(obj) Returns an array of property names
+// Object.values(obj) Returns an array of property values
+// Object.entries(obj) Returns an array of [key, value] pairs
+
+// Advance property descriptors
+// writeable: Can you change the value? true/false
+// enumerable does it show in loops like for...in? true/false
+// configurable: can you delete or reconfigure the property? true/false
+
+// Example with a method
+const cars = {
+  brand: "Toyota",
+  year: 2020,
+  start: function () {
+    console.log("Car is starting...");
+  },
+};
+cars.start();
+
+//! Classes - Allow you to create blueprints for objects
+
+// They allow you to define propertie and methods that every objects created from the class will have. Classes are part of ES6
+// a class defines the structure and behaviour of an object. You can then create instances(objects) of that class
+
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hi, my name is ${this.name}`);
+  }
+}
+
+const user1 = new Person("Fredrick", 20);
+user1.greet(); // Hi my name is Alice
 
 // .Client() Particularly when working with libraries like 'discord.js' or 'tmi.js' it is used to represent a bot client.
 // .Client() Connects you to discord servers, listens for events, sends/recieves messagesa and manages roles, users, channels etc
