@@ -72,7 +72,7 @@ person.sayHello();
 // Math.ceil() - Rounds a number up to the nearest integer - Math.ceil(4.3) -> 5
 // Math.random() - Returns a random number between 0 (inclusive) and 1 (exclusive) - Math.random() -> 0.629
 // Math.pow(base, exp) - Raises base to the power of exp - Math.pow(2, 3) -> 8
-// Math.sqrt() - Returns the squareroot of a number - Math.sqrt(9) -> 3
+// Math.sqrt() - Returns the squareroot of a number - Math.sqrt(9) -> 3 
 
 //! Custom methods
 
