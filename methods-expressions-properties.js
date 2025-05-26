@@ -181,7 +181,7 @@ const calculator = {
     return a * b;
   },
   divide: function (a, b) {
-    return a % b;
+    return a / b;
   },
 };
 
@@ -189,3 +189,4 @@ console.log(calculator.add(1, 2));
 console.log(calculator.substract(4, 5));
 console.log(calculator.multiply(3, 3));
 console.log(calculator.divide(2, 4));
+ 
