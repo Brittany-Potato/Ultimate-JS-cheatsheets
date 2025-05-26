@@ -1,0 +1,22 @@
+{
+  "name": "js-cheat-sheet",
+  "version": "1.0.0",
+  "description": "A cheat sheet for JavaScript",
+  "main": "methods-expressions-properties.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brittany-Potato/Functions-and-elements.git"
+  },
+  "author": "Potato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brittany-Potato/Functions-and-elements/issues"
+  },
+  "homepage": "https://github.com/Brittany-Potato/Functions-and-elements#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}

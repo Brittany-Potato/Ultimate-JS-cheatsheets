@@ -51,9 +51,9 @@ greet(); //"Hello, friend!"
 //! Exercise
 
 function even(x) {
-    if (x % 2 === even) {
-        console.log("Even")
-    } else {
-        console.log("Uneven")
-    }
-};
+  if (x % 2 === even) {
+    console.log("Even");
+  } else {
+    console.log("Uneven");
+  }
+}

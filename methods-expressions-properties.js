@@ -24,7 +24,7 @@ person.sayHello();
 // .map() Transforms each item in an array. Example = [1, 2].map(x => x*2) [2, 4]
 // .filter() Filters items based on a condition. Example = [1,2,3].filter(x => x > 1) -> [1,2]
 // .reduce() Reduces array to a single value. Example = [1,2,3].reduce((a,b) => a+b) -> 6
-  // accumulator is a variable inside reduce that stores the ongoin result of the operation you're performing inside
+// accumulator is a variable inside reduce that stores the ongoin result of the operation you're performing inside
 // .match() Returns an array of matches or null if none are found
 
 //! Misc methods
@@ -72,7 +72,7 @@ person.sayHello();
 // Math.ceil() - Rounds a number up to the nearest integer - Math.ceil(4.3) -> 5
 // Math.random() - Returns a random number between 0 (inclusive) and 1 (exclusive) - Math.random() -> 0.629
 // Math.pow(base, exp) - Raises base to the power of exp - Math.pow(2, 3) -> 8
-// Math.sqrt() - Returns the squareroot of a number - Math.sqrt(9) -> 3 
+// Math.sqrt() - Returns the squareroot of a number - Math.sqrt(9) -> 3
 
 //! Custom methods
 
@@ -189,4 +189,3 @@ console.log(calculator.add(1, 2));
 console.log(calculator.substract(4, 5));
 console.log(calculator.multiply(3, 3));
 console.log(calculator.divide(2, 4));
- 

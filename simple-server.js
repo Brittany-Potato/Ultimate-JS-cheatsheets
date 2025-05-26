@@ -4,7 +4,6 @@
 // They bring in core modules, Third-party modules and custom files.
 // They also configure your apps instance, define port numbers and database URLS, or setting up middleware.
 
-
 //! Middleware
 // functions that ubtercept and process HTTP requests.
 // Enables things like parsing data, logging, authentication, or error handling.
@@ -26,7 +25,6 @@
 // Key function: server.listen(port, callback).
 // port: The port number to listen to.
 // callback: A function that runs once the server starts (Often used to log a message).
-
 
 //! Basic server building blocks/blueprint
 
@@ -55,6 +53,3 @@ app.post("./echo", (req, res) => {
 app.listen(port, () => {
   console.log(`Server is listening at http://localhost:${port}`);
 });
-
-
-
