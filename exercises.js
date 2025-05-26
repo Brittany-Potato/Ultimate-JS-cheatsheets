@@ -86,4 +86,77 @@ const longestWord1 = word1.reduce((longest, current) => {
   return current.length > longest.length ? current : longest;
 }, "");
 
-console.log(longestWord); // "Jumps"
+console.log(longestWord1); // "Jumps"
+
+//! Exercise Six - Ai assisted
+// Use .reduce() to add all numbers together
+// Requires a callback function
+
+const numbers = [1, 2, 3, 4, 5];
+
+const sum = numbers.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  0
+);
+// The ballback function inside reduce adds the current number to the accumulator with the initial value of 0
+
+console.log(sum);
+
+//! Exercise Seven - Ai assisted
+// Return the longest word
+
+const animals = ["cat", "elephant", "tiger", "giraffe"];
+
+const longestAnimalName = animals.reduce((longest, current) => {
+  return current.length > longest.length ? current : longest;
+}, "");
+
+console.log(longestAnimalName); //output "elephant"
+
+//! Exercise Eight
+// Count how many times each character appears in a string
+
+const inputCount = "hello";
+
+const wordSplit = inputCount.split("");
+
+const charCount = wordSplit.reduce((acc, char) => {
+  acc[char] = (acc[char] || 0) + 1;
+  return acc;
+}, {});
+
+console.log(charCount); // Outcome: { h:1, e: 1, l: 2, o: 1}
+
+// wordSplit.reduce(...) transforms the array into a single value
+// (acc, char) => {...} - Callback function, acc is acumulator and char is the current element being processed
+// The end array {} is empty because you want to collect counts in the object.
+
+//! Exercise Nine
+// Use .reduce() to sum up all the letters in the given array
+
+const numbersAgain = [1, 2, 3, 4, 5];
+
+const numbersAdded = numbersAgain.reduce(
+  (acc, currentValue) => acc + currentValue,
+  0
+);
+
+console.log(numbersAdded);
+
+//! Exercise Ten
+// Find the maximum number
+
+const givenNumbers = [3, 7, 2, 9, 5];
+
+const largestNumber = givenNumbers.reduce((acc, currentValue) => {
+  return Math.max(acc, currentValue);
+});
+
+console.log(largestNumber); // 9
+
+//! Exercise Eleven
+// Given an array of words, use .reduce() to count the total letters
+
+const food = ["apple", "banana", "pear"];
+
+const foodValue = food.reduce((sum, char) => sum);

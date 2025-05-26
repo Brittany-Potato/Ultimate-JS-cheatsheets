@@ -24,6 +24,7 @@ person.sayHello();
 // .map() Transforms each item in an array. Example = [1, 2].map(x => x*2) [2, 4]
 // .filter() Filters items based on a condition. Example = [1,2,3].filter(x => x > 1) -> [1,2]
 // .reduce() Reduces array to a single value. Example = [1,2,3].reduce((a,b) => a+b) -> 6
+  // accumulator is a variable inside reduce that stores the ongoin result of the operation you're performing inside
 // .match() Returns an array of matches or null if none are found
 
 //! Misc methods
@@ -56,9 +57,22 @@ person.sayHello();
 // searchValue - The text or pattern you want to replace
 // replacement - The text to insert instead
 
-// .on() Particularly when using 'discord.j' and 'tmi.js' libraries the .on method listens for specific events and defines what your
+// .on() Particularly when using 'discord.js' and 'tmi.js' libraries the .on method listens for specific events and defines what your
 // program should do when those events occur.
 // .on syntax = object.on('eventName', callbackFunction);
+
+//! Objects
+
+// .Math is a built-in javascript object that provides mathematical constrants and functions.
+// it is not a function or constructor. you just call its methods or access its properties directly
+// Math.max() - Returns the largest number amoung arguments -  Math.max(1,5,10) -> 10
+// Math.min() - Returns the smallest number amoung arguments - Math.min(1, 5, 10) -> 1
+// Math.round() - Rounds a number to the nearest integer - Math.round(4.7) -> 5
+// Math.floor() - Rounds a number down to the nearest integer - Math.floor (4.7) -> 4
+// Math.ceil() - Rounds a number up to the nearest integer - Math.ceil(4.3) -> 5
+// Math.random() - Returns a random number between 0 (inclusive) and 1 (exclusive) - Math.random() -> 0.629
+// Math.pow(base, exp) - Raises base to the power of exp - Math.pow(2, 3) -> 8
+// Math.sqrt() - Returns the squareroot of a number - Math.sqrt(9) -> 3
 
 //! Custom methods
 
