@@ -14,16 +14,24 @@ person.sayHello();
 // JS gives you many built-in objects like string, array, Math, etc, and these come with useful methods.
 
 //! String Methods include
-// - .toUpperCase() Converts string into uppercase. Example = "hi".toUpperCase() -> "HI"
+// - .toUpperCase() Converts string into uppercase. Example - "hello".toUpperCase() -> "HELLO"
+const upperCase = "Hello".toUpperCase();
 // - .split() Splits string into an array. Example = "a, b, c".split(",") -> ["a", "b", "c"]
+const splitting = "Hello".split();
 // - .includes() Check if a string contains something. Example = "hello".includes("h") -> true
+const including = "Hello".includes("H");
 
 //! Array methods include
 // .push() Adds items to the end. Example = [1, 2].push(3) -> [1, 2, 3]
+const pushing = [1, 2].push(3);
 // .pop() Removes last item. Example = [1, 2, 3].pop() -> [1, 2]
+const popping = [1, 2, 3].pop();
 // .map() Transforms each item in an array. Example = [1, 2].map(x => x*2) [2, 4]
+const mapping = [1, 2].map((x) => x * 2)[(2, 4)];
 // .filter() Filters items based on a condition. Example = [1,2,3].filter(x => x > 1) -> [1,2]
+const filtering = [1, 2, 3].filter((x) => x > 1);
 // .reduce() Reduces array to a single value. Example = [1,2,3].reduce((a,b) => a+b) -> 6
+const reducing = [1, 2, 3].reduce((a, b) => a + b);
 // accumulator is a variable inside reduce that stores the ongoin result of the operation you're performing inside
 // .match() Returns an array of matches or null if none are found
 
