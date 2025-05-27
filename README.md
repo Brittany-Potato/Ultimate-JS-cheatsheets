@@ -1,4 +1,8 @@
-A folder I started putting together to act as a JavaScript Guide/Cheat sheet, still a wip with more to come.
+Project:
+Compile a folder of ultimate JavaScript cheatsheets to help teach, remind and aid developers on their journey.
+
+Purpose:
+Help aid developers and students.
 
 Different files include:
 
