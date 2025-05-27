@@ -22,9 +22,33 @@ describe("Api1 test functions", () => {
 //! Jest test commands and functions
 
 // test() or it() defines a single unit test
-// expect() - Used to create an asserton so you can compare an actual value to the expected value
+test("test1", () => {
+  expect(func({ variable: "data", year: 2014 })).toEqual({
+    outcomeTitle: "expected result",
+  });
+});
 
-// Matchers (Used with expect())
+// expect() - Used to create an asserton so you can compare an actual value to the expected value
+expect(actual).toBe(expected);
+
+// beforeEach() / afterEach() - Run code before or after each test
+beforeEach(() => {
+  console.log("Runs before every test");
+});
+
+// beforeAll() / afterAll() - Run code once before/after all tests in the file
+beforeAll(() => {
+  console.log("Runs once before all tests");
+});
+
+// describe() Groups related tests together (Shown at the top of the file)
+// Mocking (Advanced) For mocking functions or modules.
+const mockFunc = jest.fn();
+
+mockFunc("hello");
+expect(mockFunc).toHaveBeenCalledWith("hello");
+
+//! Matchers (Used with expect())
 // .toBe() - Strict equality (like ===) - expect(2 + 2)toBe(4)
 // .toEqual() - Deep equality (for object/array) - expect({a:1}).toEqual({a:1})
 // .not.toBe() - Negation - expect(2+2).not.toBe(5)
