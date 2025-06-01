@@ -120,6 +120,78 @@ dog.speak();
 
 // You can put expressions inside statements but you cannot put a statement in an expression
 
+//! Operators
+
+// Arithmetic
+// + - Addition, example: 5 + 2 = 7
+// - - Subtraction, example: 5 - 2 = 3
+// * - Multiplication, example: 5 * 2 = 10
+// / - Division, example: 5 / 2 = 2.5
+// % - Modulus, example: 5 % 2 = 1
+// ** - Exponentiation, example: 2 ** 3 = 8
+// ++ - Increment, example: let x = 1; x++ = 2 after increment 
+// -- - Decrement, example: let x = 2; x-- = 1 after decrement 
+
+// Assignment
+// = - Assignment, example: x = 5
+// += - Add and assign, example: x += 2 = x = x + 2
+// -= - Subtract and assign, example: x -= 2 = x = x - 2
+// *= - Multiply and assign, example: x *= 2 = x = x * 2
+// /= - Divide and assign, example: x /= 2 = x = x / 2
+// %= - Modulus and assign, example: x = x % 2
+// **= - Exponentiation and assign, example: x **= 2 x = x ** 2
+
+//Comparison
+// == - Equal (loose), example: '5' == 5 true
+// === - Equal (Strict), example: '5' === 5 false
+// != - Not equal (loose), example: '5' != 5 false
+// !== Not equal (Strict), example: '5' !== 5 true
+// > - Greater than, example: 5 > 2 true
+// < - Less than, example: 5 < 2 false
+// >= - Greater than or equal to, example: 5 >= 5 true
+// <= Less than or equal to, example: 5 <= 2 false
+
+// Logical operators
+// && - Logical AND, example: true && false
+// ` - (Backtick?), example: Logical OR
+// ! - Logical NOT, example: false
+
+// Bitwise Operators
+// & - AND, example: 5 & 3 = 1 (0101 & 0011)
+// ` - (Backtick), example: OR = `5
+// ^ - XOR, example: 5 ^ 3 = 6
+// ~ - NOT, example: ~5 = -6
+// << - Left shift, example: 5 << 1 = 10
+// >> - Right shift, example: 5 >> 1 = 2
+// >>> - Zero-fill right shift, example: -5 >>> 1 = Large unsigned int
+
+// Type operators
+// typeof - Returns type of operand, example: typeof 123 = 'number'
+// instanceof - Tests object constructor, example: x instanceof Date = true/false
+
+// Ternary operator
+// A shorthand for if-else conditions
+// condition ? expr1 : expr2 example: 5 > 3 ? "yes" : "no" = "yes"
+
+// Spread and rest operators
+// ... - Spread, example: [...arr1, ...arr2]
+// ... - Rest (in function args), example: function(...args) {}
+
+// Destructuring assignment 
+// Used to unpack values from arrays or objects
+// const [a, b] = [1, 2];
+// const {x, y} = {x: 10, y: 20};
+
+// Optional chaining and nullish coalescing
+// ?. - Optional chaining, example: obj?.prop = undefined if obj is nullish
+// ?? - Nullish coalescing, exaple: null ?? 'default' = 'default'
+
+// In, delete, void, new
+// in - Checks if property exists, example: 'x' in obj true/false
+// delete - Deletes a property, example: delete obj.prop true
+// void - Evaluates but returns undefined, example: void 0 undefined
+// new - Creates instance of object, example: new Date() = Date object
+ 
 //! Properties
 
 // .length doesn't use () at the end because it is a property and not a method.
