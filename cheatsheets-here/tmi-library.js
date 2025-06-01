@@ -89,3 +89,44 @@ function onMessageHandler(channel, tags, message, self) {
         client.say(channel, `Echo: ${text}`);
     }
 }
+
+//! Shoutout command
+
+function onMesssageHandler(channel, tags, message, self) {
+    if (self) return;
+
+    const args = message.trim().split(' ');
+    const command = args.shift().toLowerCase();
+
+    // Example: !so 
+    if (command === '!so') {
+        // Optionally: Only allow mods or the streamer to us this
+        const isMod = tags.mod || tags['user-type'] === 'mod' || tags.username === 'your_channel_username';
+
+        if (!isMod) {
+            client.say(channel, `@${tags.username}, you don't have permission to use that commands.`);
+            return;
+        }
+
+        if (args.length === 0) {
+            client.say(channel, `Usage: !so <username>`);
+            return;
+        }
+
+        const targetUser = args[0].replace(`@`, '').toLowerCase();
+        client.say(channel, `Go checkout @${targetUser} at https//twitch.tv/${targetUser} - They are awesome!`);
+    }
+}
+
+//! Message handler
+
+twitchClient.on('message', (channel, tags, message, self) => {
+    if (self) return;
+
+    console.log(`[${channel}] ${tags[`display-name`]} ${message}`);
+
+    // Example command
+    if (message.toLowerCase() === '!hello') {
+        twitchClient.say(channel, `@${tags['display-name']} Hello there!`);
+    }
+});

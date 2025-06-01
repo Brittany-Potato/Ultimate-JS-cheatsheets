@@ -20,6 +20,9 @@ const upperCase = "Hello".toUpperCase();
 const splitting = "Hello".split();
 // - .includes() Check if a string contains something. Example = "hello".includes("h") -> true
 const including = "Hello".includes("H");
+// - .trim() removes whitespace from both ends of a string
+const str = " Hello World ";
+const trimmed = str.trim();
 
 //! Array methods include
 // .push() Adds items to the end. Example = [1, 2].push(3) -> [1, 2, 3]
