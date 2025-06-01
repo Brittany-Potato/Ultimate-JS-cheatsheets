@@ -83,3 +83,5 @@ const cleaned = "abc123!@#".replace(/[^a-z]/gi, "");
 // Password validation (min 8 chars, one number)
 const pw = /^(?=.*\d).{8,}$/;
 pw.test("password1"); // true
+
+
