@@ -1,4 +1,4 @@
-//! How to make a discord 
+//! Discord.js library
 
 //! 1. Client
 
