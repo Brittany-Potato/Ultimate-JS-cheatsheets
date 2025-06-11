@@ -158,7 +158,7 @@ dog.speak();
 // && - Logical AND, example: true && false
 // ` - (Backtick?), example: Logical OR
 // ! - Logical NOT, example: false
-// || - Logical evaluation, example: true || false = true BUT flase || false = false
+// || - Logical evaluation, example: true || false = true BUT false || false = false
 
 // Bitwise Operators
 // & - AND, example: 5 & 3 = 1 (0101 & 0011)

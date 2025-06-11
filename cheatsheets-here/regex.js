@@ -39,6 +39,7 @@ const patternConst = new RegExp("abc");
 // $ - End of string - /end$/ matches "The end"
 // [] - Character set - /[aeiou]/ matches vowels
 // [^] - Negated set - /[^aeiou]/ matches non-vowels
+// \n - line break - "Hello\nWorld" console.log(text.split('\n)); ["Hello", "World"]
 
 // Quantifiers
 
